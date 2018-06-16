@@ -41,7 +41,7 @@ Patricia tree for hashing unspents
 
 # increase this when database needs to be updated
 global GENESIS_HASH
-GENESIS_HASH = '000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f'
+GENESIS_HASH = '000007beab6b60ea39b8c553dcae06ffa5e4b57077df2c5ca1debe807e2d0017'
 DB_VERSION = 3
 KEYLENGTH = 56   # 20 + 32 + 4
 
@@ -336,8 +336,8 @@ class Storage(object):
             print_log("no undo info for ", height)
         return eval(s)
 
-    def write_undo_info(self, height, dashd_height, undo_info):
-        if height > dashd_height - self.reorg_limit or self.test_reorgs:
+    def write_undo_info(self, height, raptured_height, undo_info):
+        if height > raptured_height - self.reorg_limit or self.test_reorgs:
             self.db_undo.put("undo_info_%d" % (height % self.reorg_limit), repr(undo_info))
 
     @staticmethod

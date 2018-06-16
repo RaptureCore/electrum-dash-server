@@ -1,15 +1,15 @@
 # Main network and testnet3 definitions
 
-# Dash src/chainparams.cpp
+# Rapture src/chainparams.cpp
 params = {
-    'dash_main': {
-        'pubkey_address': 76, #L120
+    'rapture_main': {
+        'pubkey_address': 60, #L120
         'script_address': 16, #L122
-        'genesis_hash': '00000ffd590b1485b3caadc19b22e6379c733355108f107a430458cdf3407ab6' #L110
+        'genesis_hash': '000007beab6b60ea39b8c553dcae06ffa5e4b57077df2c5ca1debe807e2d0017' #L110
     },
-    'dash_test': {
+    'rapture_test': {
         'pubkey_address': 140, #L220
         'script_address': 19, #L222
-        'genesis_hash': '00000bafbc94add76cb75e2ec92894837288a481e5c005f6563d91623bf8bc2c' #L210
+        'genesis_hash': '00000d504c2b5622c6c3a1c0c3321fe58b6c79a442f5e7143ee0c0e5903cda3f' #L210
     }
 }
