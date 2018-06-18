@@ -1,8 +1,8 @@
-Electrum-rapture-server for the Electrum RAPTURE client
+Electrum-rapture-server for the Electrum Rapture client
 =========================================
 
   * Author: Thomas Voegtlin (ThomasV on the bitcointalk forum)
-  * Dash codebase port Authors: ELM4Ever, Propulsion
+  * Rapture codebase port Authors: ELM4Ever, Propulsion
   * Language: Python
 
 Features
